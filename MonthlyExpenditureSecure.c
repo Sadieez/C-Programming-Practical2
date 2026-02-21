@@ -19,30 +19,30 @@ int main(){
 
 
 printf(" Enter food expenses: $");
-scanf(" %f" , &foodExpenses); 
+fgets(" %f" , &foodExpenses); 
 if (foodExpenses < 0) {
     printf("Invalid! Cannot be negative.\n");
     return 1; 
 }
 printf(" Enter Leisure Expenses: $");
-scanf(" %f" , &leisureExpenses);
+fgets(" %f" , &leisureExpenses);
 if (leisureExpenses < 0) {
     printf("Invalid! Cannot be negative.\n");
     return 1; 
 }
 printf(" Enter Clothes Expenses: $");
-scanf(" %f" , &clothesExpenses);
+fgets(" %f" , &clothesExpenses);
 if (clothesExpenses < 0) {
     printf("Invalid! Cannot be negative.\n");
     return 1; 
 }
 printf(" Enter Travel Expenses: $");
-scanf(" %f" , &travelExpenses);
+fgets(" %f" , &travelExpenses);
 if (travelExpenses < 0) {
     printf("Invalid! Cannot be negative.\n");
     return 1; 
 }
 totalSpent = foodExpenses + leisureExpenses + clothesExpenses + travelExpenses + Accommodation;
-printf("Total monthly expenditure is: $%.2f\n", totalSpent);
+fgets("Total monthly expenditure is: $%.2f\n", totalSpent);
 return 0;
 }
